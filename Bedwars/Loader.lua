@@ -1,7 +1,9 @@
+local NewRevolve = makefolder("NewRevolve")
+local Saves = makefolder("NewRevolve/Saves")
 local Config = makefolder("NewRevolve/Config")
 local MainSrc_Url = "https://raw.githubusercontent.com/SpectreVC/NewRevolve/Core/Bedwars/MainSrc.lua"
 local Main_Src = game:HttpGet(MainSrc_Url)
-local Data_Path = "NewRevolve/Saves/Data.lua"
+local Data_Path = "NewRevolve/Saves/Data.json"
 
 if not isfile(Data_Path) then
 writefile(Data_Path, game:GetService("HttpService"):JSONEncode(true))
@@ -33,9 +35,16 @@ local Toggle = CreateToggle({
     end
     end
 })
+
+
+
+
 Sentry Was Here:)
 ]]
 local documentation = writefile("NewRevolve/Config/documentation.lua", doc)
 
+
 local MainSrc = writefile("NewRevolve/Config/MainSrc.lua", Main_Src)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SpectreVC/NewRevolve/Core/Bedwars/Data.lua"))()
+
+task.wait(0.4)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpectreVC/NewRevolve/Core/Test/Loader2.lua"))()

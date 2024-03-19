@@ -4,6 +4,7 @@ local Config = makefolder("NewRevolve/Config")
 local MainSrc_Url = "https://raw.githubusercontent.com/SpectreVC/NewRevolve/Core/Bedwars/MainSrc.lua"
 local Main_Src = game:HttpGet(MainSrc_Url)
 local Data_Path = "NewRevolve/Saves/Data.json"
+local Main_Src_Path = "NewRevolve/Config/MainSrc.lua"
 
 if not isfile(Data_Path) then
 writefile(Data_Path, game:GetService("HttpService"):JSONEncode(true))
@@ -45,7 +46,9 @@ Sentry Was Here:)
 
 if Data_Check1 then
 local documentation = writefile("NewRevolve/Config/documentation.lua", doc)
+if not isfile(Main_Src_Path) then
 local MainSrc = writefile("NewRevolve/Config/MainSrc.lua", Main_Src)
+  end
 end
 
 task.wait(0.4)

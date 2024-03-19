@@ -1,7 +1,7 @@
 local Config = makefolder("NewRevolve/Config")
 local MainSrc_Url = "https://raw.githubusercontent.com/SpectreVC/NewRevolve/Core/Bedwars/MainSrc.lua"
 local Main_Src = game:HttpGet(MainSrc_Url)
-local Data_Path = "NewRevolve/Saves/Data.json"
+local Data_Path = "NewRevolve/Saves/Data.lua"
 
 if not isfile(Data_Path) then
 writefile(Data_Path, game:GetService("HttpService"):JSONEncode(true))

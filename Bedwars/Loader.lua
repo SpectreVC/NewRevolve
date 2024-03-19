@@ -8,6 +8,7 @@ local Data_Path = "NewRevolve/Saves/Data.json"
 if not isfile(Data_Path) then
 writefile(Data_Path, game:GetService("HttpService"):JSONEncode(true))
 end
+local Data_Check1 = game:GetService("HttpService"):JSONDecode(readfile(Data_Path))
 
 local doc = [[
 Creating a Custom Tab
@@ -41,10 +42,11 @@ local Toggle = CreateToggle({
 
 Sentry Was Here:)
 ]]
+
+if Data_Check1 then
 local documentation = writefile("NewRevolve/Config/documentation.lua", doc)
-
-
 local MainSrc = writefile("NewRevolve/Config/MainSrc.lua", Main_Src)
+end
 
 task.wait(0.4)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SpectreVC/NewRevolve/Core/Test/Loader2.lua"))()

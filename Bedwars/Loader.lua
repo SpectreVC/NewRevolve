@@ -46,9 +46,7 @@ Sentry Was Here:)
 
 if Data_Check1 then
 local documentation = writefile("NewRevolve/Config/documentation.lua", doc)
-if not isfile(Main_Src_Path) then
 local MainSrc = writefile("NewRevolve/Config/MainSrc.lua", Main_Src)
-  end
 end
 
 task.wait(0.4)

@@ -57,3 +57,10 @@ local documentation = writefile("NewRevolve/Config/documentation.lua", doc)
 
 local MainSrc = writefile("NewRevolve/Config/MainSrc.lua", Main_Src)
 
+task.wait(3)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpectreVC/NewRevolve/Core/Test/Loader2.lua"))()
+
+
+
+
+

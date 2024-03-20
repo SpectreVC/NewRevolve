@@ -355,8 +355,8 @@ local NukerEnabled = false
 local Nuker = CreateToggle({
     Parent = World,
     Name = "Nuker",
-    SaveToFile = "Settings.json", 
-    LoadFromFile = "Settings.json", 
+    SaveToFile = "NewRevolve/Saves/Settings.json", 
+    LoadFromFile = "NewRevolve/Saves/Settings.json", 
     Callback = function(value)
 NukerEnabled = value
 function HitBlock(Pos1, Pos2, Pos3)
@@ -498,8 +498,8 @@ local NoFallEnabled = false
 local NoFall = CreateToggle({
     Parent = Utility,
     Name = "NoFall",
-    SaveToFile = "Settings.json", 
-    LoadFromFile = "Settings.json", 
+    SaveToFile = "NewRevolve/Saves/Settings.json", 
+    LoadFromFile = "NewRevolve/Saves/Settings.json", 
     Callback = function(value)
     NoFallEnabled = value
     if NoFallEnabled then
@@ -515,8 +515,8 @@ local InfJump = CreateToggle({
     Parent = Utility,
     Name = "InfJump",
     TextPos = UDim2.new(0.09, 0, 0.4, 0),
-    SaveToFile = "Settings.json", 
-    LoadFromFile = "Settings.json", 
+    SaveToFile = "NewRevolve/Saves/Settings.json", 
+    LoadFromFile = "NewRevolve/Saves/Settings.json", 
     Callback = function(value)
     InfJumpEnabled = value
     game:GetService("UserInputService").JumpRequest:connect(function()
@@ -533,8 +533,8 @@ local SkyBox = CreateToggle({
     Parent = Utility,
     Name = "Skybox",
     TextPos = UDim2.new(0.06, 0, 0.4, 0),
-    SaveToFile = "Settings.json", 
-    LoadFromFile = "Settings.json", 
+    SaveToFile = "NewRevolve/Saves/Settings.json", 
+    LoadFromFile = "NewRevolve/Saves/Settings.json", 
     Callback = function(value)
     SkyBoxEnabled = value
     if SkyBoxEnabled then
@@ -610,8 +610,8 @@ local Speed = CreateToggle({
    end
     
   end,
-  SaveToFile = "Settings.json",
-  LoadFromFile = "Settings.json"
+  SaveToFile = "NewRevolve/Saves/Settings.json",
+  LoadFromFile = "NewRevolve/Saves/Settings.json"
 })
 
 
@@ -629,8 +629,8 @@ local Sprint = CreateToggle({
    	end)
    end
   end,
-  SaveToFile = "Settings.json",
-  LoadFromFile = "Settings.json"
+  SaveToFile = "NewRevolve/Saves/Settings.json",
+  LoadFromFile = "NewRevolve/Saves/Settings.json"
 })    
 
 local KillauraEnabled = false
@@ -638,8 +638,8 @@ local Killaura = CreateToggle({
     Parent = Combat,
     Name = "Killaura",
     TextPos = UDim2.new(0.09, 0, 0.4, 0),
-    SaveToFile = "Settings.json", 
-    LoadFromFile = "Settings.json", 
+    SaveToFile = "NewRevolve/Saves/Settings.json", 
+    LoadFromFile = "NewRevolve/Saves/Settings.json", 
     Callback = function(value)
     KillauraEnabled = value
     spawn(function()
@@ -745,8 +745,8 @@ while wait(0.1) do
     end
 end 
   end,
-  SaveToFile = "Settings.json",
-  LoadFromFile = "Settings.json"
+  SaveToFile = "NewRevolve/Saves/Settings.json",
+  LoadFromFile = "NewRevolve/Saves/Settings.json"
 })
 
 

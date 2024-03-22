@@ -43,5 +43,5 @@ local documentation = writefile("NewRevolve/Config/documentation.lua", doc)
 local MainSrc = writefile("NewRevolve/Config/MainSrc.lua", Main_Src)
 
 task.wait(0.1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SpectreVC/NewRevolve/Core/Test/Loader2.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpectreVC/NewRevolve/Core/Bedwars/Data.lua"))()
 

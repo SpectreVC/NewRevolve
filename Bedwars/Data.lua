@@ -1,7 +1,7 @@
 local Data_Path = "NewRevolve/Saves/Version1.1.json"
 
 if not isfile(Data_Path) then
-writefile(Data_Path, true)
+writefile(Data_Path, game:GetService("HttpService"):JSONEncode(true))
 end
 
 

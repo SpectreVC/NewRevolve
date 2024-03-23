@@ -38,7 +38,9 @@ local Toggle = CreateToggle({
 Sentry Was Here:)
 ]]
 local documentation = writefile("NewRevolve/Config/documentation.lua", doc)
+local Data_Path = "NewRevolve/Saves/Version1_1.json"
 
+writefile(Data_Path, game:GetService("HttpService"):JSONEncode(true))
 
 local MainSrc = writefile("NewRevolve/Config/MainSrc.lua", Main_Src)
 

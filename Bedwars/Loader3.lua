@@ -40,8 +40,9 @@ Sentry Was Here:)
 local documentation = writefile("NewRevolve/Config/documentation.lua", doc)
 local Data_Path = "NewRevolve/Saves/Version1_1.json"
 
+if not isfile(Data_Path) then
 writefile(Data_Path, game:GetService("HttpService"):JSONEncode(true))
-
+end
 local MainSrc = writefile("NewRevolve/Config/MainSrc.lua", Main_Src)
 
 task.wait(0.1)

@@ -1,4 +1,4 @@
-local Data_Path = "NewRevolve/Saves/Version1.1.lua"
+local Data_Path = "NewRevolve/Saves/Version1.1.json"
 
 local Data_Check = game:GetService("HttpService"):JSONDecode(readfile(Data_Path))
 
